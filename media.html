@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Comparison</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Types</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
     <h1>EDTC112 Assignment</h1>
-    <nav>
+    <nav id="navbar">
       <a href="index.html">Home</a>
       <a href="theories.html">Theories</a>
       <a href="strategies.html">Strategies</a>
@@ -18,17 +18,20 @@
       <a href="media.html">Media</a>
       <a href="reflection.html">Reflection</a>
     </nav>
+    <div id="menu-toggle" onclick="toggleMenu()">☰</div>
   </header>
 
   <main class="card">
     <h2>Digital and Non-Digital Media</h2>
-    <p>This infographic shows the key differences between digital and non-digital media in education.</p>
-    <img src="assets/images/infographic.png" alt="Infographic" style="width: 100%; max-width: 600px;" />
-    <a href="assets/docs/infographic.pdf" class="button" download>Download Infographic (PDF)</a>
+    <p>This infographic compares digital and non-digital media in an educational context.</p>
+    <img src="assets/images/infographic.png" alt="Infographic about media types" style="width: 100%; max-width: 600px;" />
+    <a href="assets/docs/infographic.pdf" class="button" download>Download Infographic PDF</a>
   </main>
 
   <footer>
     <p>© 2025 Rethabile Bogosi</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
