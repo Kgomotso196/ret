@@ -1,3 +1,4 @@
+/* === GLOBAL STYLES === */
 body {
   font-family: 'Segoe UI', 'Poppins', sans-serif;
   margin: 0;
@@ -5,14 +6,16 @@ body {
   color: #343A40;
 }
 
+/* === HEADER & NAVIGATION === */
 header {
   background-color: #007BFF;
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 header h1 {
@@ -20,16 +23,52 @@ header h1 {
   font-size: 1.5rem;
 }
 
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1rem;
+  font-weight: 500;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* === HAMBURGER ICON === */
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* === MOBILE RESPONSIVE NAV === */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #007BFF;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+/* === MAIN CONTENT CARD === */
 main.card {
   background: white;
   max-width: 800px;
@@ -39,6 +78,7 @@ main.card {
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
+/* === PROFILE IMAGE === */
 .profile-img {
   margin-top: 1rem;
   max-width: 200px;
@@ -46,6 +86,7 @@ main.card {
   display: block;
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   padding: 1rem;
@@ -53,6 +94,7 @@ footer {
   color: white;
 }
 
+/* === BUTTON STYLES === */
 .button {
   display: inline-block;
   margin-top: 1rem;
