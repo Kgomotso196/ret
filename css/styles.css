@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #F8F9FA;
+  color: #343A40;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main.card {
+  background: white;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+  margin-top: 1rem;
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #343A40;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
